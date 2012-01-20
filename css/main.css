@@ -221,7 +221,9 @@ aside{
 /* Tablet Portrait Size to Standard 790 (devices and browsers) */
 @media screen and (min-width:768px) and (max-width: 789px)
 {
-	
+	body {font: 65%/1.5 Arial, Helvetica, sans-serif;}
+	#multicolumn{padding: 2.164557%; /*20px*/}
+	#mainImage{width: 25.316456%; /*200px*/}
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -229,6 +231,7 @@ aside{
 {
 	section, aside{float:none; width:60%;}
 	#multicolumn{-moz-column-count:2;}
+	#mainImage{width: 18.987342%; /*150px*/}
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
