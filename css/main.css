@@ -1,10 +1,8 @@
 body {
-	color: gray;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
-	line-height: 1.5;
-	width: 790px;
-	margin: 0 auto;
+	font: 75%/1.5 Arial, Helvetica, sans-serif; /*12px*/
+	color: #666;
+	max-width: 790px;
+	margin: 0px auto;
 }
 
 a:hover{
@@ -12,7 +10,7 @@ a:hover{
 }
 
 h1{ 
-	font-size: 32px;
+	font-size: 2em; /*32px*/
 	text-shadow: 3px 3px 3px #838B8B;
 	float: left;
 }
@@ -23,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
 	font-family: 'Quicksand', Arial, Helvetica, sans-serif;
-	color: black;
+	color: #000;
 }
 
 ul li a:link{
@@ -64,6 +62,19 @@ ul{
 	
 }
 
+#characterList{
+	float: left;
+	margin: 0 auto;
+    padding: 0px;
+    overflow:hidden;
+	
+}
+
+#characterList li{
+	display: block;
+	
+}
+
 #calltoaction{
 	background-color: #E0FFFF;
 	clear: left;
@@ -80,26 +91,34 @@ span{
 
 .imgGallery img{
 	border: 5px solid #000;
-	margin: 10px;
+	margin: 1.818182%;
+	float: left;
+	width: 225px;/*225px*/
+	height: 138px;/*138px*/
 }
 
 #historyWrapper{
 	background-color: #EEE5DE;
 	clear: both;
+	margin: 0 auto;
+	padding: 0;
 }
 
 #multicolumn{
 	-moz-column-count:4;
-	-moz-column-gap: 20px;
+	-moz-column-gap: 2.531646%; /*20px*/
+	padding: 3.164557%; /*25px*/
+	margin: 0;
 }
 
+/***************************Join Now Button****************************/
 .button {
 	display: inline-block;
 	outline: none;
 	cursor: pointer;
 	text-align: center;
 	text-decoration: none;
-	font: 14px/100% Arial, Helvetica, sans-serif;
+	font: 0.875em/100% Arial, Helvetica, sans-serif;
 	padding: .5em 2em .55em;
 	text-shadow: 0 1px 1px rgba(0,0,0,.3);
 	-webkit-border-radius: .5em; 
@@ -137,6 +156,7 @@ span{
 	background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
 }
+/***************************END BUTTON****************************/
 
 ul{
 	display: block;
@@ -144,15 +164,79 @@ ul{
 }
 
 #mainImage{
+	border: 2px solid #444;
+	width: 37.974684%; /*300px*/
 	float:left;
+}
+
+img{
+	max-width: 100%;
 }
 
 #mainSection{
 	float:left;
-	width: 480px;
-	margin-left: 10px;
+	width: 56.962025%;/*450px*/
+	margin-left: 1.265823%/*10px*/
 }
 
 #clearFix{
 	clear: both;
+}
+
+footer{
+	font: 125%/2 Arial, Helvetica, sans-serif; /*12px*/
+	color: #fff;
+	background-color:black;
+	padding: 0px;
+	margin: 0px;
+}
+
+footer img{
+	width: 4.43038%; /*35px*/
+	height: 4.43038%; /*35px*/
+	padding: 0px 10px 0 10px;
+}
+
+#galleryWrapper{
+	width:790px;
+	margin: 0 auto;
+	overflow: hidden;
+	background: #fff;
+}
+
+section{
+	float: left;
+	width: 69.620253%; /*550px*/
+}
+
+aside{
+	float:left;
+	margin-left: 1.265823em; /*10px*/
+	width: 29.113924%; /*240px*/
+}
+
+/* = Media Queries
+=========================================================================================*/
+
+/* Tablet Portrait Size to Standard 790 (devices and browsers) */
+@media screen and (min-width:768px) and (max-width: 789px)
+{
+	
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width:480px) and (max-width: 767px)
+{
+	section, aside{float:none; width:60%;}
+	#multicolumn{-moz-column-count:2;}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px)
+{
+	#mainImage{display:none;}
+	section, aside{float:none; width:40%;}
+	#multicolumn{-moz-column-count:1;}
+	footer{display:none;}
+	ul{float:left;}
 }
