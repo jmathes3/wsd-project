@@ -198,7 +198,7 @@ footer img{
 }
 
 #galleryWrapper{
-	width:790px;
+	width:100%;
 	margin: 0 auto;
 	overflow: hidden;
 	background: #fff;
@@ -212,7 +212,7 @@ section{
 aside{
 	float:left;
 	margin-left: 1.265823em; /*10px*/
-	width: 29.113924%; /*240px*/
+	width: 25.316456%; /*240px*/
 }
 
 /* = Media Queries
