@@ -53,13 +53,6 @@ ul li {
 	padding: 0px 10px;
 	background-color: #fff;
 	display: inline;
-	
-	
-}
-
-ul{
-	float: right;
-	
 }
 
 #characterList{
@@ -67,12 +60,10 @@ ul{
 	margin: 0 auto;
     padding: 0px;
     overflow:hidden;
-	
 }
 
 #characterList li{
 	display: block;
-	
 }
 
 #calltoaction{
@@ -86,7 +77,6 @@ span{
 	-webkit-opacity: 0.25;
 	-o-opacity: 0.25;
 	opacity: 0.25;
-	
 }
 
 .imgGallery img{
@@ -111,7 +101,9 @@ span{
 	margin: 0;
 }
 
-/***************************Join Now Button****************************/
+/* = Join Now Button
+=========================================================================================*/
+
 .button {
 	display: inline-block;
 	outline: none;
@@ -128,9 +120,11 @@ span{
 	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
 	box-shadow: 0 1px 2px rgba(0,0,0,.2);
 }
+
 .button:hover {
 	text-decoration: none;
 }
+
 .button:active {
 	position: relative;
 	top: 1px;
@@ -144,23 +138,28 @@ span{
 	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
 }
+
 .orange:hover {
 	background: #f47c20;
 	background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
 	background: -moz-linear-gradient(top,  #f88e11,  #f06015);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
 }
+
 .orange:active {
 	color: #fcd3a5;
 	background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
 	background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
 }
-/***************************END BUTTON****************************/
+
+/* = End Button
+=========================================================================================*/
 
 ul{
 	display: block;
 	list-style-type: square;
+	float:right;
 }
 
 #mainImage{
@@ -215,6 +214,48 @@ aside{
 	width: 25.316456%; /*240px*/
 }
 
+/* = Table
+=========================================================================================*/
+table{
+	width: 55%;
+	border: 2px solid #444;
+	border-collapse: collapse;
+	margin-bottom: 10px;
+}
+
+th{
+	background: #e5e3e3;
+	border-bottom: 2px solid #444;
+}
+
+tr{
+	text-align: center;
+}
+
+td{
+	border-bottom: 1px solid #444;
+}
+
+.odd_row{
+	background: #eff3c4;
+}
+
+
+
+
+/* = End Table
+=========================================================================================*/
+
+/* = Form
+=========================================================================================*/
+
+
+
+
+
+/* = End Form
+=========================================================================================*/
+
 /* = Media Queries
 =========================================================================================*/
 
@@ -243,3 +284,6 @@ aside{
 	footer{display:none;}
 	ul{float:left;}
 }
+
+/* = End Media Queries
+=========================================================================================*/
