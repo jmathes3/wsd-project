@@ -50,7 +50,7 @@ ul li a:active{
 }
 
 ul li {
-	padding: 0 10;
+	padding: 0px 10px;
 	background-color: #fff;
 	display: inline;
 	
