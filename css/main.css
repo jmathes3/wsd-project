@@ -314,7 +314,7 @@ footer img{
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width:480px) and (max-width: 767px)
 {
-	section, aside{float:none; width:60%;}
+	section, aside{float:none; width:80%;}
 	#multicolumn{-moz-column-count:2;}
 	#mainImage{width: 18.987342%; /*150px*/}
 	label{width: 100%; text-align: left;}
@@ -327,7 +327,8 @@ footer img{
 @media only screen and (max-width: 479px)
 {
 	#mainImage{display:none;}
-	section, aside{float:none; width:40%;}
+	section, aside{display:none;}
+	#gallery{display:none;}
 	#multicolumn{-moz-column-count:1;}
 	footer{display:none;}
 	ul{float:left;}
