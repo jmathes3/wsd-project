@@ -80,11 +80,10 @@ span{
 }
 
 .imgGallery img{
-	border: 5px solid #000;
+	border: 2px solid #000;
 	margin: 1.818182%;
 	float: left;
-	width: 225px;/*225px*/
-	height: 138px;/*138px*/
+	width: 44.301887%;/*225px*/
 }
 
 #historyWrapper{
@@ -182,20 +181,6 @@ img{
 	clear: both;
 }
 
-footer{
-	font: 125%/2 Arial, Helvetica, sans-serif; /*12px*/
-	color: #fff;
-	background-color:black;
-	padding: 0px;
-	margin: 0px;
-}
-
-footer img{
-	width: 4.43038%; /*35px*/
-	height: 4.43038%; /*35px*/
-	padding: 0px 10px 0 10px;
-}
-
 #galleryWrapper{
 	width:100%;
 	margin: 0 auto;
@@ -217,10 +202,12 @@ aside{
 /* = Table
 =========================================================================================*/
 table{
-	width: 55%;
+	width: 50%;
 	border: 2px solid #444;
 	border-collapse: collapse;
 	margin-bottom: 10px;
+	float: left;
+	margin: 10px;
 }
 
 th{
@@ -248,13 +235,70 @@ td{
 
 /* = Form
 =========================================================================================*/
+form{
+	width:45%;
+	float: left;
+	margin: 0 auto;
+}
+
+fieldset{
+	margin: 0 auto;
+	background: #d7d8cf;
+}
+
+label
+{
+width: 20%;
+float: left;
+text-align: right;
+}
+
+input
+{
+color: #781351;
+background: #eff3c4;
+border: 1px solid #781351;
+width: 70%;
+margin-left: 2.2531646%;
+}
+
+legend{
+	font: 2em/1.5 Arial, Helvetica, sans-serif; /*32px*/
+	color: #666;
+	max-width: 100%;
+	margin: 0px auto;
+}
+
+select{
+	margin-left: 10px;
+}
+
+textarea{
+	margin-left:  2.2531646%; 
+}
 
 
-
-
+#btnJoinDiv{
+	text-align: center;
+}
 
 /* = End Form
 =========================================================================================*/
+
+footer{
+	font: 125%/2 Arial, Helvetica, sans-serif; /*12px*/
+	color: #fff;
+	padding: 0px;
+	margin: 0px;
+}
+
+footer img{
+	width: 4.43038%; /*35px*/
+	height: 4.43038%; /*35px*/
+	padding: 0px 10px 0 10px;
+	overflow: hidden;
+	clear: both;
+}
 
 /* = Media Queries
 =========================================================================================*/
@@ -273,6 +317,10 @@ td{
 	section, aside{float:none; width:60%;}
 	#multicolumn{-moz-column-count:2;}
 	#mainImage{width: 18.987342%; /*150px*/}
+	label{width: 100%; text-align: left;}
+	input{width: 95%;}
+	form{width:100%;}
+	table{width:100%;}
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -283,6 +331,10 @@ td{
 	#multicolumn{-moz-column-count:1;}
 	footer{display:none;}
 	ul{float:left;}
+	label{width: 100%; text-align: left;}
+	input{width: 95%;}
+	form{width:100%;}
+	table{width:100%;}
 }
 
 /* = End Media Queries
